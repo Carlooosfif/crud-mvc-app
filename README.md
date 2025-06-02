@@ -34,8 +34,8 @@ Este proyecto implementa una aplicación CRUD (Crear, Leer, Actualizar, Eliminar
 - Node.js
 - Express
 - TypeScript
-- MongoDB
-- Mongoose
+- SQL Server
+- Sequelize ORM
 
 ### Frontend
 - React
@@ -49,7 +49,7 @@ Este proyecto implementa una aplicación CRUD (Crear, Leer, Actualizar, Eliminar
 
 ### Requisitos Previos
 - Node.js (v14+)
-- MongoDB
+- SQL Server
 
 ### Configuración del Backend
 
@@ -64,7 +64,12 @@ npm install
 3. Crear un archivo .env con la siguiente información:
 ```bash
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/crud_mvc_db
+DB_HOST=localhost
+DB_NAME=card_collection_db
+DB_USER= TU USUARIO
+DB_PASSWORD= TU CONTRASEÑA
+DB_PORT=1433
+JWT_SECRET=tu_secreto_jwt_muy_seguro_2024
 ```
 4. Iniciar el servidor en modo desarrollo:
 ```bash
