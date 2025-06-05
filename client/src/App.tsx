@@ -10,6 +10,7 @@ import AlbumsPage from './pages/public/AlbumsPage';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import Ranking from './pages/user/Ranking';
+import { RankingTable } from './components/RankingTable';
 
 // Páginas de administración
 import AdminDashboard from './pages/admin/Dashboard';
@@ -41,6 +42,7 @@ function App() {
            <Route path="/albums" element={<AlbumsPage />} />
            <Route path="/login" element={<Login />} />
            <Route path="/register" element={<Register />} />
+           <Route path="/ranking" element={<RankingTable />} />
            
            {/* Rutas protegidas - Solo usuarios autenticados */}
            <Route path="/dashboard" element={

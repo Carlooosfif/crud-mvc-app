@@ -5,6 +5,7 @@ import connectDB from './config/db';
 import authRoutes from './routes/authRoutes';
 import albumRoutes from './routes/albumRoutes';
 import cardRoutes from './routes/cardRoutes';
+import rankingRoutes from './routes/rankingRoutes';
 
 // Cargar variables de entorno
 dotenv.config();
@@ -25,6 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/albums', albumRoutes);
 app.use('/api/cards', cardRoutes);
+app.use('/api', rankingRoutes);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
